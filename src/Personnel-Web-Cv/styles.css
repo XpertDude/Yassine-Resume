@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: var(--main-color);
+    color: bisque;
+}
+
+:root {
+    --main-color: #002c42;
+    --secondary-color: #79abd4;
+}
+
+.nav-bar {
+    display: block;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-bar .nav-link,
+.title {
+    color: azure;
+    text-decoration: none;
+}
+
+.nav-bar .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.cover {
+    width: 250px;
+    height: 320px;
+    object-fit: fill;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 10px 1px 0px var(--secondary-color);
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.cart {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.link {
+    color: black;
+    border: 1px solid var(--secondary-color);
+}
+
+.link:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.title-page{
+    background-color: var(--secondary-color);
+}
+
+.modal-container{
+    position: relative;
+}
+
+.read-more{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.exit{
+    cursor: pointer;
+}
+
+.resize{
+    resize: none;
+}
