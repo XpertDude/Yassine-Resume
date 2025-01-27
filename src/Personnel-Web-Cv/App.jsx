@@ -5,8 +5,8 @@ import Contact from './contact';
 import About from './about';
 function App() {
     return (
-        <Router>
-            <Routes>
+        <Router basename='/Yassine-Resume'>
+            <Routes >
                 <Route  path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />

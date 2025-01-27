@@ -1,2 +1,0 @@
-# Store
-simple web store 
