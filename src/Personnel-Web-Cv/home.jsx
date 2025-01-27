@@ -10,6 +10,7 @@ export default function Home(){
             <p>Am Yassine Aggoujil a web developer.</p>
             <Link to='/portfolio' className='btn btn-primary button'>See Portfolio</Link>
             </div>
+            <div className="col"></div>
             <div className='col'>
         <div className='cover'>
         <img className='picture' src="https://i.ibb.co/c6NG7GC/Picsart-24-08-26-15-50-31-843.png" alt="image" border="0" />
