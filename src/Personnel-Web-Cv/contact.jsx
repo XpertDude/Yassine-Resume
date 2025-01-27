@@ -14,7 +14,6 @@ function ContactForm() {
     const [showAlert, setShowAlert] = useState(false);
     const [errorAlert, setErrorAlert] = useState(false); // To handle errors
     const formRef = useRef();
-    console.log(document.querySelectorAll('.input').value);
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
