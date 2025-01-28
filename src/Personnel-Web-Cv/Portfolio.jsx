@@ -62,6 +62,13 @@ export default function Portfolio() {
             description: "The Store project is an advanced web application that simulates a CMS-like shopping experience. Each product dynamically generates its own page, providing a seamless browsing experience. Using fetch, it retrieves fake data to display products in a realistic and interactive store environment. This project demonstrates advanced development techniques and takes a big leap beyond simpler projects like the Pets Shop, showcasing dynamic content handling and improved functionality.",
             image: 'https://i.ibb.co/tDx0v9b/Store-01-24-2025-10-59-AM.png',
             link: 'https://xpertdude.github.io/Store'
+        },
+        {
+            id: 9,
+            title: 'Web Resume',
+            description: "A professional web CV showcasing my portfolio, certifications, and contact information. Visitors can explore my completed projects, view earned certifications, and easily reach out to me through the integrated contact form. Fully responsive and designed for a seamless user experience on any device.",
+            image: 'https://i.ibb.co/GMkSSmn/Personal-CV-01-28-2025-02-32-PM.png',
+            link: 'https://xpertdude.github.io/Personal-web-cv/'
         }
     ]
     const [modalProject, setModalProject] = useState({});

@@ -17,6 +17,13 @@ export default function Home(){
         </div>
         </div>
         </div>
+        <div className="container-fluid ">
+            <div className="d-flex flex-row gap-4">
+            <Link to="https://github.com/XpertDude" target="_blank"><i className="col bi bi-github"></i></Link>
+            <Link to="https://www.linkedin.com/in/yassine-aggoujil-5bb618308/" target="_blank"><i className="bi bi-linkedin"></i></Link>
+            <Link to="https://wa.me/+212773192006" target="_blank"><i className="bi bi-whatsapp"></i></Link>
+            </div>
+        </div>
     </section>
     </>
 }

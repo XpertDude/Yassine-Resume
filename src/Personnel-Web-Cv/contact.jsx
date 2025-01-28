@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import NavBar from './Layout'
+import { Link } from "react-router-dom";
 function ContactForm() {
     const [formData, setFormData] = useState({
         name: "",
@@ -106,7 +107,6 @@ const resetForm = () => {
                             Please enter a valid email.
                         </Form.Control.Feedback>
                     </Form.Group>
-
                     {/* Message Field */}
                     <Form.Group className="mb-3" controlId="formMessage">
                         <Form.Label>Message</Form.Label>
@@ -128,7 +128,15 @@ const resetForm = () => {
                         Submit
                     </Button>
                 </Form>
+                <div className="mt-3 container-fluid ">
+            <div className="d-flex flex-row gap-4">
+            <Link to="https://github.com/XpertDude" target="_blank"><i className="col bi bi-github"></i></Link>
+            <Link to="https://www.linkedin.com/in/yassine-aggoujil-5bb618308/" target="_blank"><i className="bi bi-linkedin"></i></Link>
+            <Link to="https://wa.me/+212773192006" target="_blank"><i className="bi bi-whatsapp"></i></Link>
             </div>
+        </div>
+            </div>
+
         </>
     );
 }
