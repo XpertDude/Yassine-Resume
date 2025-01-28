@@ -91,7 +91,7 @@ export default function Portfolio() {
     }
     return <>
         <NavBar />
-        <h1 className="badge fs-4 m-4 title-page">Portfolio: </h1>
+        <h1 className="mb-4 text-center">Portfolio</h1>
         <section className="container-fluid gap-5 row modal-container">
             {handleShow && <DisplayProjectModal />}
             {portfolio.length > 0 &&

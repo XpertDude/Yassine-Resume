@@ -10,6 +10,7 @@ body {
 :root {
     --main-color: #002c42;
     --secondary-color: #79abd4;
+    --button-color: chocolate;
 }
 
 .nav-bar {
@@ -69,7 +70,7 @@ body {
 }
 
 .title-page {
-    background-color: var(--secondary-color);
+    background-color: var(--button-color);
 }
 
 .modal-container {
