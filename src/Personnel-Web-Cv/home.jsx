@@ -17,7 +17,7 @@ export default function Home(){
         </div>
         </div>
         </div>
-        <div className="container-fluid mx-5">
+        <div className="container-fluid mt-5">
             <div className="d-flex flex-row gap-4">
             <Link to="https://github.com/XpertDude" target="_blank"><i className="col bi bi-github"></i></Link>
             <Link to="https://www.linkedin.com/in/yassine-aggoujil-5bb618308/" target="_blank"><i className="bi bi-linkedin"></i></Link>
