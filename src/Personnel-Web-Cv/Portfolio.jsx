@@ -69,6 +69,13 @@ export default function Portfolio() {
             description: "A professional web CV showcasing my portfolio, certifications, and contact information. Visitors can explore my completed projects, view earned certifications, and easily reach out to me through the integrated contact form. Fully responsive and designed for a seamless user experience on any device.",
             image: 'https://i.ibb.co/GMkSSmn/Personal-CV-01-28-2025-02-32-PM.png',
             link: 'https://xpertdude.github.io/Personal-web-cv/'
+        },
+        {
+            id: 10,
+            title: 'Pokémon-Search-App',
+            description: "A Pokémon Search App that allows users to search for any Pokémon by name or ID. It fetches data from the PokéAPI and displays the Pokémon’s image, stats, type, and abilities in a clean, user-friendly interface. Perfect for quickly looking up Pokémon details!",
+            image: 'https://i.ibb.co/DDRzpVfS/Pok-mon-Search-App-01-29-2025-03-28-PM.png',
+            link: 'https://xpertdude.github.io/Pokemon-Search-App/'
         }
     ]
     const [modalProject, setModalProject] = useState({});

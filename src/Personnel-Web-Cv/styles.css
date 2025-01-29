@@ -13,8 +13,10 @@ body {
     --button-color: chocolate;
 }
 
+
 .nav-bar {
     display: block;
+    z-index: 100;
     width: 100%;
     background-color: var(--main-color);
     padding: 10px;
@@ -118,4 +120,7 @@ body {
 
 .nav-link {
     color: white;
+}
+.hover:hover{
+    background-color: var(--secondary-color);
 }
