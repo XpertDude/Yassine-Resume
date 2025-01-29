@@ -7,7 +7,7 @@ export default function Achievements(){
     <NavBar />
     <section className='p-3 d-flex flex-column align-items-center gap-4'>
         <h1>Achievements and Certificates</h1>
-        <Card className='text-center w-50'>
+        <Card className='text-center w-75'>
             <Card.Header >
             Web Design Certificate
             </Card.Header>
@@ -18,7 +18,7 @@ export default function Achievements(){
                 <p className='text-primary'>View Link: <span className='text-black'><Link to='https://www.freecodecamp.org/certification/XpertGenius/responsive-web-design' target='_blank'><Badge className='hover'>View</Badge></Link></span></p>
             </Card.Body>
         </Card>
-        <Card className='text-center w-50'>
+        <Card className='text-center w-75'>
             <Card.Header >
             JavaScript certificate
             </Card.Header>
