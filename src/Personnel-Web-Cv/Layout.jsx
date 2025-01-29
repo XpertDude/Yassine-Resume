@@ -38,6 +38,7 @@ export default function NavBar() {
                         <Nav className="me-auto">
                         <Link className="nav-link" to='/'>Home</Link>
                         <Link className="nav-link" to='/portfolio'>Portfolio</Link>
+                        <Link className="nav-link" to='/achievements'>Achievements</Link>
                         <Link className="nav-link" to='/about'>About</Link>
                         <Link className="nav-link" to='/contact'>Contact</Link>
                         </Nav>
