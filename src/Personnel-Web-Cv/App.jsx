@@ -6,14 +6,12 @@ import About from './about';
 import Achievements from './Achievements';
 function App() {
     return (
-        <Router basename='/Yassine-Resume' future={{
-            v7_startTransition: true,
-        }}>
+        <Router basename='/Yassine-Resume'>
             <Routes >
-                <Route path="/" element={<Home />} />
+                <Route  path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path='/achievements' element={<Achievements />} />
+                <Route path='/achievements' element={<Achievements />}/>
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<h1>404 - Page Not Found</h1>} />
             </Routes>
