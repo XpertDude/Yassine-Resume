@@ -13,7 +13,7 @@ function ContactForm() {
 
     const [validated, setValidated] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
-    const [errorAlert, setErrorAlert] = useState(false); // To handle errors
+    const [errorAlert, setErrorAlert] = useState(false);
     const formRef = useRef();
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -37,20 +37,20 @@ const resetForm = () => {
             //e.stopPropagation();
         } else {
             emailjs.sendForm(
-                    "service_lo0s2rg", // Replace with your service ID
-                    "template_5ksjnna", // Replace with your template ID
+                    "", // Replace with your service ID
+                    "", // Replace with your template ID
                     formRef.current,
-                    "9ECYgoX2aOx9R2vRp" // Replace with your user ID
+                    "" // Replace with your user ID
                 )
                 .then(
                     (result) => {
                         console.log(result.text);
-                        setShowAlert(true); // Show success alert
+                        setShowAlert(true);
                         resetForm();
                     },
                     (error) => {
                         console.log(error.text);
-                        setErrorAlert(true); // Show error alert
+                        setErrorAlert(true);
                     }
                 );
         }
@@ -62,7 +62,6 @@ const resetForm = () => {
             <NavBar />
             <div className="container mt-5">
                 <h1>Contact Us</h1>
-                {/* Success Alert */}
                 {showAlert && (
                     <Alert
                         variant="success"
@@ -74,7 +73,6 @@ const resetForm = () => {
                 )}
 
                 <Form ref={formRef} noValidate validated={validated} onSubmit={handleSubmit}>
-                    {/* Name Field */}
                     <Form.Group className="mb-3" controlId="formName">
                         <Form.Label>Name</Form.Label>
                         <Form.Control
@@ -91,7 +89,7 @@ const resetForm = () => {
                         </Form.Control.Feedback>
                     </Form.Group>
 
-                    {/* Email Field */}
+
                     <Form.Group className="mb-3" controlId="formEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control
@@ -107,7 +105,7 @@ const resetForm = () => {
                             Please enter a valid email.
                         </Form.Control.Feedback>
                     </Form.Group>
-                    {/* Message Field */}
+
                     <Form.Group className="mb-3" controlId="formMessage">
                         <Form.Label>Message</Form.Label>
                         <Form.Control
